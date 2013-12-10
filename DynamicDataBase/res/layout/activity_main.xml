@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:background="@color/back" 
+    android:weightSum="3" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textview_header_one"
+            style="@style/TextViewHeader"
+            android:text="@string/database" />
+		<View 
+		    android:id="@+id/databases_view"
+		    android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+        <LinearLayout
+            android:id="@+id/databaseButtonsContainerOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/footer_buttons_database_add"
+                    style="@style/ButtonsFooterContainer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/footer_buttons_database_edit"
+                    style="@style/ButtonsFooterContainer"
+                    android:text="@string/edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/footer_buttons_database_delete"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                	android:layout_height="wrap_content"
+                	android:layout_marginLeft="10dp"
+                	android:layout_marginBottom="5dp"
+                    style="@style/ButtonsFooterContainer"
+                    android:text="@string/delete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/listfragment_database"
+            style="@style/ListViewFragment"
+            android:layout_above="@id/databaseButtonsContainerOne"
+            android:layout_below="@id/textview_header_one"
+            android:tag="fragment_database" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_marginRight="1dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textview_header_two"
+            style="@style/TextViewHeader"
+            android:text="@string/table" />
+<View 
+		    android:id="@+id/tables_view"
+		    android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+        <LinearLayout
+            android:id="@+id/tablesButtonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/footer_buttons_table_add"
+                    style="@style/fourButtonsFooterContainer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/footer_buttons_table_edit"
+                    style="@style/fourButtonsFooterContainer"
+                    android:text="@string/edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/footer_buttons_table_view"
+                    style="@style/fourButtonsFooterContainer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                                    	android:layout_marginBottom="5dp"
+                    
+                    android:text="@string/view" />
+
+                <Button
+                    android:id="@+id/footer_buttons_table_delete"
+                    style="@style/fourButtonsFooterContainer"
+                                    	android:layout_marginBottom="5dp"
+                    
+                    android:text="@string/delete" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/listfragment_tables"
+            style="@style/ListViewFragment"
+            android:layout_above="@id/tablesButtonsContainer"
+            android:layout_below="@id/textview_header_two"
+            android:tag="fragment_table" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textview_header_three"
+            style="@style/TextViewHeader"
+            android:text="@string/field" />
+<View 
+		    android:id="@+id/fields_view"
+		    android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"/>
+        <LinearLayout
+            android:id="@+id/fieldsButtonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/footer_buttons_field_add"
+                    style="@style/ButtonsFooterContainer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/add" />
+
+                <Button
+                    android:id="@+id/footer_buttons_field_edit"
+                    style="@style/ButtonsFooterContainer"
+                    android:text="@string/edit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/footer_buttons_field_delete"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    style="@style/ButtonsFooterContainer"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                                    	android:layout_marginBottom="5dp"
+                    android:text="@string/delete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/listfragment_fields"
+            style="@style/ListViewFragment"
+            android:layout_below="@id/textview_header_three"
+            android:layout_above="@id/fieldsButtonsContainer"
+            android:tag="fragment_field" />
+    </RelativeLayout>
+
+</LinearLayout>

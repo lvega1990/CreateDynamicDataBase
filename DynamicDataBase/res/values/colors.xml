@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="listseparator">#C3CAD2</color>
+    <color name="back">#E6F1FA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="skyblue">#D8F0FC</color>
+    <color name="blue">#32B2E1</color>
+ <color name="gray">#6B6E71</color>  
+ <color name="transparent">#80000000</color>
+
+</resources>

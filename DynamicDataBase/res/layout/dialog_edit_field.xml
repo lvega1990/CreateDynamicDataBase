@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edit_name_field"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/add_name" />
+    
+    <Spinner
+	    android:id="@+id/field_spinner"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="4dp"
+	    android:layout_marginLeft="4dp"
+	    android:layout_marginRight="4dp"
+	    android:layout_marginBottom="16dp" />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Indexed"/>
+        
+    <RadioGroup 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <RadioButton android:id="@+id/radio_yes"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="Yes"/>
+	    
+	    <RadioButton android:id="@+id/radio_no"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="No"/>
+		</RadioGroup>
+    </LinearLayout>
+</LinearLayout>
